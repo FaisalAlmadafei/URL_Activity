@@ -3,138 +3,120 @@
 <head>
   <style>
     .rounded-square {
-       
       width: 1500px;
       height: 600px;
-      background-color: #ccc;
-      border-radius: 20px; /* Adjust this value to change the roundness of the corners */
-    
-      position: relative; /* Set the positioning context */
-     /* Adjust the top value to move the square down */
-      left: 120px; /* Adjust the left value to move the square to the righ*/
-        top: 40px;
-        right: 140px;
-       
-    
+      background-color: white;
+      border-radius: 20px;
+      position: relative;
+      left: 120px;
+      top: 0px;
+      right: 140px;
     }
 
-
-    .ineer-squ {
-       
-       width: 1000px;
-       height: 300px;
-       background-color: white;
-       
-       border: 2px solid black;
+    .inner-squ {
+      width: 1000px;
+      height: 300px;
+      background-color: rgb(243, 243, 243);
+      border: 2px solid black;
       border-radius: 20px;
-     
-       position: relative; /* Set the positioning context */
-      /* Adjust the top value to move the square down */
-       left: 400px; /* Adjust the left value to move the square to the righ*/
-         top: 200px;
-         
-     
-     }
+      position: relative;
+      left: 500px;
+      top: 200px;
+    }
 
-    
-    
+    header {
+      background-color: #b1e4f8;
+      padding: 10px;
+    }
+
     .navbar {
-  position: absolute;
-  top: 30px;
+       display: flex;
+      justify-content:right ;
+        
+    }
 
-  right: 15px;
-  display: flex;
-  
-  
-  
- 
-}
+    .navbar a {
+      text-decoration: none;
+      color: black;
+      font-size: 18px;
+      padding: 10px;
+      margin-left: 20px;
+      margin-right: 10px;
+    }
 
-.navbar a {
-    border: 1px solid;
-  background-color: white;
-  color: black;
-  text-decoration: none;
-  padding-left: 80px;
-  padding-top: 20px;
-  padding-bottom: 20px;
-  padding-right: 80px;
-  margin: 0;
-  font-size: 18px;
+    .navbar a:hover {
+      background-color: darkturquoise;
+    }
 
-  
+    .inner-squ label {
+      position: absolute;
+      top: 90px;
+      left: 100px;
+      font-size: 30px;
+    }
 
- 
-}
+    .inner-squ input {
+      position: absolute;
+      top: 80px;
+      left: 400px;
+      width: 450px;
+      height: 50px;
+    }
 
-.navbar a:hover {
-  background-color:darkturquoise;
-}
+    .inner-squ button {
+      cursor: pointer;
+      position: absolute;
+      top: 150px;
+      left: 530px;
+      width: 200px;
+      height: 50px;
+      background-color: #b1e4f8;
+      border-radius: 20px;
+    }
 
-.ineer-squ label{
-    position: absolute;
-    top: 90px;
-    left: 100px;
-    font-size: 30px;
-  
-
-    
-}
-   
-.ineer-squ input{
-    position: absolute;
-    top: 80px;
-    left: 400px;
-    width: 450px;
-    height: 50px;
-    
-}
-
-.ineer-squ button{
-    cursor: pointer;
-    position: absolute;
-    top: 150px;
-    left: 530px;
-    width: 200px;
-    height: 50px;
-    background-color: aqua;
-    border-radius: 20px;
-    
-}
-
-img{
-    position: absolute;
-    left: 15px;
-    top: 10px;
-}
-
+    .image-container img  {
+        padding: 8px;
+      padding-left: 2px;
+      width: 70px;
+      height: 60px;
+      position: absolute;
+      left: 0px;
+      top: 0px
+      
+      
+    }
   </style>
 </head>
 
 <body>
 
-  <div class="rounded-square">
-    <img src="CPIT-PIC.png" alt="">
-    <div class="navbar">
-        <a href="#">My URLS</a>
-        <a href="#">Sign UP</a>
-        <a href="#">Sign In</a>
+    <header>
+
+        <div class="navbar">
+         
+          <a href="#">My URLs</a>
+          <a href="#">Sign Up</a>
+          <a href="#">Sign In</a>
+
        
+        </div>
+
+      </header>
+
+      <div class="image-container">
+        <img src="CPIT-PIC.png" alt="">
       </div>
 
-    <div class="ineer-squ">
-        
+
+ 
+    
+
+
+    <div class="inner-squ">
       <label for="URL">Shorten a long URL :</label>
       <input type="url" id="URL">
       <button>Shorten URL</button>
-        
-
-
     </div>
-
-
-
-
   </div>
 </body>
 </html>
